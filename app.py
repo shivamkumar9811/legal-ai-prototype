@@ -1,3 +1,4 @@
+import os
 import streamlit as st
 import google.generativeai as genai
 import PyPDF2
@@ -11,7 +12,8 @@ from datetime import datetime
 # -----------------------------
 # 🔑 Configure Google API
 # -----------------------------
-genai.configure(api_key="AIzaSyCjZchiyv1DpI4n0l4eQRXp6zZ40dY2ttg")  # <-- yaha apni API key paste karo
+# Secret API Key (from GitHub / Streamlit Cloud)
+genai.configure(api_key=os.getenv("GENAI_API_KEY"))
 
 # -----------------------------
 # 📂 Extract Text from PDF
@@ -249,5 +251,6 @@ if uploaded_file:
             file_name="Full_Legal_Report.pdf",
             mime="application/pdf",
         )
+
 
         
