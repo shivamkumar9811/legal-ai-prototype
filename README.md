@@ -49,7 +49,7 @@ LegalEaseAI simplifies legal knowledge by:
 ### 🔹 Clone the Repository
 
 ```bash
-git clone https://github.com/shivamkumar9811/legal-ai-prototype.git
+git clone https://github.com/your-username/LegalEaseAI.git
 cd LegalEaseAI
 ```
 
@@ -75,6 +75,8 @@ GOOGLE_API_KEY_3 = "your_api_key_3"
 streamlit run app.py
 ```
 
+---
+
 ## 📂 Project Workflow
 
 ```mermaid
@@ -86,6 +88,8 @@ flowchart LR
     C --> F[Q&A Responses]
     D & E & F --> G[Generate Report with ReportLab]
     G --> H[Downloadable PDF]
+```
+
 ---
 
 ## ⚠️ Disclaimer
@@ -108,6 +112,4 @@ It does **not provide legal advice**. For professional legal matters, always con
 * Multi-language legal document support
 * Integration with legal databases
 * Improved clause detection with fine-tuned models
-* Mobile app version
-
----
+* Mobile app version.
