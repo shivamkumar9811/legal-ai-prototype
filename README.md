@@ -49,8 +49,8 @@ LegalEaseAI simplifies legal knowledge by:
 ### 🔹 Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/LegalEaseAI.git
-cd LegalEaseAI
+git clone https://github.com/shivamkumar9811/legal-ai-prototype.git
+cd legal-ai-prototype
 ```
 
 ### 🔹 Install Dependencies
