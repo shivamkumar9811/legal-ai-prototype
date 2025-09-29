@@ -29,7 +29,7 @@ def get_model():
     for _ in range(len(API_KEYS)):
         try:
             genai.configure(api_key=API_KEYS[current_index])
-            return genai.GenerativeModel("models/gemini-2.5-flash-preview-09-2025")
+            return genai.GenerativeModel("models/gemini-2.5-flash")
         except Exception as e:
             if "ResourceExhausted" in str(e):
                 # Rotate key if quota exceeded
@@ -340,6 +340,7 @@ if uploaded_file:
             file_name="Full_Legal_Report.pdf",
             mime="application/pdf",
         )
+
 
 
 
